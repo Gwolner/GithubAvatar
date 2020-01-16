@@ -1,6 +1,6 @@
 # Pratica de AJAX <img src="img/rocketseat.png" width="160" height="40" align="right">
 
-Prática elaborada no treinamento de AJAX da Rocketseat usando objeto XMLHttpRequest, Promises e API Axios.
+Prática elaborada no treinamento de AJAX da Rocketseat usando a classe XMLHttpRequest, Promises e API Axios.
 
 
 
@@ -8,7 +8,7 @@ Após abrir o arquivo HTML, a requisição será executada de forma assíncrona,
 
 É PRECISO ATUALZIAR A PÁGINA para que os campos ná área de desenvolvedor (F12) possam exibir corretamente o resultado obtivo nos seus respectivos campos.
 
-## Objeto XMLHTTPRequest
+## Objeto XMLHttpRequest
 
 Objeto que dá acesso a funcionalidade do AJAX.
 ```
