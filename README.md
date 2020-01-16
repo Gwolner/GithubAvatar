@@ -27,15 +27,9 @@ xhr.send(null);
 
 Monitora mudança de status da requisição assincrona:
 ```
-xhr.onreadystatechange = function() {
-  //Acionar uma função quando o status atual da requisição for atualizado.
-  if (xhr.readyState === 4) {
-    //4 é o valor de quando há retorno/ resposta do servidor.
-
-    /* O xhr.responseText retorna um JSON, por isto está dentro do JSON.parse(), 
-                        para que a String seja exibida pelo console.log()
-                        */
-    console.log(JSON.parse(xhr.responseText));
+xhr.onreadystatechange = function() { //Acionar uma função quando o status da requisição for atualizado.
+  if (xhr.readyState === 4) { //4 é o valor de quando há resposta do servidor.
+    console.log(JSON.parse(xhr.responseText)); //O xhr.responseText retorna um JSON.
   }
 };
 ```
