@@ -15,22 +15,17 @@ Objeto que dá acesso a funcionalidade do AJAX.
 var xhr = new XMLHttpRequest();
 ```
 
-<br/>
 Monta a requisição de dados do servidor. Primeiro o método e segundo a url.
-
 ```
 xhr.open("GET", "https://api.github.com/users/gwolner");
 ```
-<br/>
-Envio da requisição montada acima. Como não vai enviar parâmetros adicionais, usá-se null.
 
+Envio da requisição montada acima. Como não vai enviar parâmetros adicionais, usá-se null.
 ```
 xhr.send(null);
 ```
 
-<br/>
 Monitora mudança de status da requisição assincrona:
-
 ```
 xhr.onreadystatechange = function() {
   //Acionar uma função quando o status atual da requisição for atualizado.
