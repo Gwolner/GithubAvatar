@@ -30,6 +30,7 @@ xhr.send(null);
 
 <br/>
 Monitora mudança de status da requisição assincrona:
+
 ```
 xhr.onreadystatechange = function() {
   //Acionar uma função quando o status atual da requisição for atualizado.
@@ -42,7 +43,6 @@ xhr.onreadystatechange = function() {
     console.log(JSON.parse(xhr.responseText));
   }
 };
-
 ```
 
 ## No Google Chrome
