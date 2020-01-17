@@ -5,6 +5,7 @@ Prática elaborada no treinamento de AJAX da Rocketseat usando a classe XMLHttpR
 
 ## Exibir avatar de usuários do Github 
 
+Add tambem sobre importar scripts JS no HTML. a ordem, qual é qual e pra que servem dirante os testes.
 
 ## Texto antigo...
 Após abrir o arquivo HTML, a requisição será executada de forma assíncrona, portanto, o resultado da requisição poderá não estar disponível/visível antes do fim da execução do JS.
