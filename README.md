@@ -3,7 +3,10 @@
 Prática elaborada no treinamento de AJAX da Rocketseat usando a classe XMLHttpRequest, Promises e API Axios.
 
 
+## Exibir avatar de usuários do Github 
 
+
+## Texto antigo...
 Após abrir o arquivo HTML, a requisição será executada de forma assíncrona, portanto, o resultado da requisição poderá não estar disponível/visível antes do fim da execução do JS.
 
 É PRECISO ATUALZIAR A PÁGINA para que os campos ná área de desenvolvedor (F12) possam exibir corretamente o resultado obtivo nos seus respectivos campos.
@@ -15,7 +18,7 @@ Objeto que dá acesso a funcionalidade do AJAX.
 var xhr = new XMLHttpRequest();
 ```
 
-Monta a requisição de dados do servidor. Primeiro o método e segundo a url.
+Monta a requisição de dados do servidor. Primeiro o método e segundo a URL.
 ```
 xhr.open("GET", "https://api.github.com/users/gwolner");
 ```
@@ -34,9 +37,23 @@ xhr.onreadystatechange = function() { //Acionar uma função quando o status da 
 };
 ```
 
+## Promises
+
+Migrar comentários do código pra ca!
+
+## API Axios
+
+Migrar comentários do código pra ca!
+
+
 ## No Google Chrome
+
+Melhorar instrução abaixo sobre analise de requisições AJAX!
 
 Na área de desenvolvedor, verificar a requisição na aba Network. 
 O nome da requisição será exibido. Próximo a ela deverá ter a aba <b>Hearders</b> exibindo o status da requisição e na aba Preview pode-se ver o que foi retornado do servidor.
 
 ## No Mozilla
+
+TESTAR AINDA E POR AQUI!!!....
+
