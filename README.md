@@ -1,4 +1,4 @@
-# Exibir avatar de usuários do Github <img src="img/ajax.png" width="160" height="60" align="right">
+# Exibir avatar de usuários do Github
 
 Add tambem sobre importar scripts JS no HTML. a ordem, qual é qual e pra que servem durante os testes.
 
