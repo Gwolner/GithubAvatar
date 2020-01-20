@@ -1,11 +1,18 @@
-# Pratica de AJAX <img src="img/ajax.png" width="160" height="40" align="right">
+# Exibir avatar de usuários do Github <img src="img/ajax.png" width="160" height="60" align="right">
 
-Prática elaborada no treinamento de AJAX da Rocketseat usando a classe XMLHttpRequest, Promises e API Axios.
+Add tambem sobre importar scripts JS no HTML. a ordem, qual é qual e pra que servem durante os testes.
+
+Aplicação web que foca no uso de diferentes formas de requisições assíncronas para que, a partir de um username do Github, possa ser exibido o avatar do respectivo usuário. O objetivo é observar que apenas o avatar é carregado, sem interferir nos demais elementos presentes na página como ocorre em alguns sites, em que toda a página é recarregada para se exibir um conteúdo atualizado.
 
 
-## Exibir avatar de usuários do Github 
+## Uso do AJAX
 
-Add tambem sobre importar scripts JS no HTML. a ordem, qual é qual e pra que servem dirante os testes.
+Trata-se de uma adaptação das prática elaborada no treinamento de AJAX da Rocketseat. Os tipos de requisições AJAX usados para exibir o avatar fazem uso do XMLHttpRequest, Promises e API Axios em momentos distíntos e de forma editável via código a fim de observar o comportamento, bastante similar, entre os tipos.
+
+
+
+
+
 
 ## Texto antigo...
 Após abrir o arquivo HTML, a requisição será executada de forma assíncrona, portanto, o resultado da requisição poderá não estar disponível/visível antes do fim da execução do JS.
