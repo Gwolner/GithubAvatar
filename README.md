@@ -107,31 +107,39 @@ myPromise()
 Como mencionado anteriormente, a Promise lida com sucesso e falha e para isso a função chamada precisa fazer uso dos métodos THEN e CATCH.
 ```
 myPromise()
-  .then(function(resolve) {
-      console.log("Avatar exibido!")
-  })
-  .catch(function(error) { //Método CATCH para caso de erro no retorno (status diferente de 200).
-      console.warn("Nome de usuário não encontrado!");
-  });
+    .then(function(resolve) {
+        console.log("Avatar exibido!");
+    })
+    .catch(function(error) {
+        console.warn("Nome de usuário não encontrado!");
+    });
 ```
-O método THEN trata do caso de sucesso (observe que ele tem uma referência à função resolve) e o CATH trata dos casos de falha (a referência à função reject não é explícita, pois recebe o nome de "error" e não de "reject").
-
-
-
+O método THEN trata do caso de sucesso (observe que ele tem uma referência à função resolve) e o CATCH trata dos casos de falha (a referência à função reject não é explícita, pois recebe o nome de "error" e não de "reject").
 
 ## API Axios
 
-Migrar comentários do código pra ca!
 
+Em vez de se uma função, chama-se a API Axios, seguida do método de envio que se deseja usar (GET, POST, HEAD, etc) e passando a  URL da requisição como parâmetro. 
+```
+axios.get("https://api.github.com/users/"+username)
+  .then(function(resolve){
+      console.log("Avatar exibido!");
+  })
+  .catch(function(error){
+      alert("Nome de usuário não encontrado!");
+  });
+```
+Se precisar passar mais parâmetros deve-se usar virgula após a URL.
 
-## No Google Chrome
+## Analisando a requisição
 
-Melhorar instrução abaixo sobre analise de requisições AJAX!
+Essa análise pode ser feita dentro do navagador, diretamente na Área do Desenvolvedor (F12).
 
-Na área de desenvolvedor, verificar a requisição na aba Network. 
-O nome da requisição será exibido. Próximo a ela deverá ter a aba <b>Hearders</b> exibindo o status da requisição e na aba Preview pode-se ver o que foi retornado do servidor.
+### No Google Chrome
+
+Pode-se verificar a requisição na aba Network, onde o nome da requisição será exibido. Próximo a ela deverá ter a aba <b>Hearders</b> exibindo o status da requisição e na aba <b>Preview</b> pode-se ver o que foi retornado do servidor.
 
 ## No Mozilla
 
-TESTAR AINDA E POR AQUI!!!....
+TESTAR E POR AQUI!!!....
 
