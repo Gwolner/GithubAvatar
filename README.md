@@ -1,12 +1,14 @@
-# Exibir avatar do Github
+# Github avatar  <img src="logo/github.png" width="40" height="40" align="right">
 
-Aplicação web que foca no uso de diferentes formas de requisições assíncronas para que, a partir de um username do Github, possa ser exibido o avatar do respectivo usuário. O objetivo é observar que apenas o avatar é carregado, sem interferir nos demais elementos presentes na página como ocorre em alguns sites, em que toda a página é recarregada para se exibir um conteúdo atualizado.
+Aplicação web que foca no uso de diferentes formas de requisições assíncronas (AJAX) utilizando uma API do Github de modo que, ao fornecer o nome do usuário, seu avatar seja exibido.
 
 ## Uso do AJAX
 
-Trata-se de uma adaptação das prática elaborada no treinamento de AJAX da [Rocketseat](https://rocketseat.com.br/). Os tipos de requisições AJAX usados para exibir o avatar fazem uso do XMLHttpRequest, Promises e API Axios em momentos distíntos e de forma editável via código a fim de observar o comportamento, bastante similar, entre os tipos.
+O intuito da aplicação é mostrar que apenas o avatar é carregado, sem interferir nos demais elementos presentes na página, como ocorre em alguns sites em que toda a página é recarregada para atualizar um único conteúdo. A aplicação é uma adaptação das prática da [Rocketseat](https://rocketseat.com.br/) sobre AJAX. 
 
-## Alternando entre tipos de requisições
+Os tipos de requisições assíncronas usadas para exibir o avatar fazem uso do <b>XMLHttpRequest</b>, <b>Promises</b> e <b>API Axios</b> em momentos distíntos e de forma editável, de modo que se possa observar o comportamento de cada tipos.
+
+## Alternando entre os tipos
 
 No arquivo index.html, antes do fechamento da tag body, existe uma área reservada para importar o arquivo AJAX que se deseja utilizar para carregar o avatar.
 
@@ -84,7 +86,6 @@ let myPromise = function() {
 ```
 O resolve e reject são funções referenciadas passadas como parâmetro.
 
-
 O código dentro da Promise é um XMLHttpRequest, porém no seu If/Else usa-se as funções <b>resolve</b> e <b>reject</b> para tratar sucesso e falha, respectivamente, durante a requisição.
 
 ```js
@@ -129,17 +130,21 @@ axios.get("https://api.github.com/users/"+username)
       alert("Nome de usuário não encontrado!");
   });
 ```
-Se precisar passar mais parâmetros deve-se usar virgula após a URL.
+Para mais parâmetros no get(), deve-se usar vírgula após a URL informada.
 
-## Analisando a requisição
+## Analisando requisições
 
 Essa análise pode ser feita dentro do navagador, diretamente na Área do Desenvolvedor (F12).
 
 ### No Google Chrome
 
-Pode-se verificar a requisição na aba Network, onde o nome da requisição será exibido. Próximo a ela deverá ter a aba <b>Hearders</b> exibindo o status da requisição e na aba <b>Preview</b> pode-se ver o que foi retornado do servidor.
+Pode-se verificar a requisição na aba <b>Network</b>, onde o nome da requisição será exibido. Próximo a ela deverá ter a aba <b>Hearders</b> exibindo o status da requisição e na aba <b>Preview</b> pode-se ver a resposta do servidor. Navegue pelas abas para visualiar mais detalhes da requisição.
 
-## No Mozilla
+ <img src="img/chrome.png" width="735" height="621">
 
-TESTAR E POR AQUI!!!....
+### No Mozilla
+
+Acesse a aba <b>Rede</b>, verifique se a opção <b>All</b> está selecionada e então clique sobre o nome da requisição. A aba <b>Hearders</b> estará marcada por defaul e na aba <b>Response</b> é possível visualizar a resposta do servidor. Navegue pelas abas para visualiar mais detalhes da requisição.
+
+<img src="img/firefox.png" width="735" height="621">
 
