@@ -2,11 +2,22 @@
 
 Aplicação web que foca no uso de diferentes formas de requisições assíncronas (AJAX) utilizando uma API do Github de modo que, ao fornecer o nome do usuário, seu avatar seja exibido.
 
-## Uso do AJAX
+## Proposta
 
 O intuito da aplicação é mostrar que apenas o avatar é carregado, sem interferir nos demais elementos presentes na página, como ocorre em alguns sites em que toda a página é recarregada para atualizar um único conteúdo. A aplicação é uma adaptação das prática da [Rocketseat](https://rocketseat.com.br/) sobre AJAX. 
 
 Os tipos de requisições assíncronas usadas para exibir o avatar fazem uso do <b>XMLHttpRequest</b>, <b>Promises</b> e <b>API Axios</b> em momentos distíntos e de forma editável, de modo que se possa observar o comportamento de cada tipos.
+
+## API Github
+
+O avatar será disponibilizado pela API Github quando forem feitas requisições para a URL abaixo:
+
+```js
+https://api.github.com/users/[username]
+```
+Onde o [username] deve ser substituido pelo nome de um usuário válido na plataforma.
+
+A consulta retornará várias informações além do avatar. Entratanto, para esta aplicação a imagem de usuário é sufieinte, a fim de não expor outros dados do usuário.
 
 ## Alternando entre os tipos
 
@@ -72,7 +83,7 @@ xhr.onreadystatechange = function() { //Acionar uma função quando o status da 
 };
 ```
 
-## Classe Promises
+### Classe Promises
 
 Cria-se uma função normal, mas com um return da classe Promise.
 ```js
@@ -117,10 +128,9 @@ myPromise()
 ```
 O método THEN trata do caso de sucesso (observe que ele tem uma referência à função resolve) e o CATCH trata dos casos de falha (a referência à função reject não é explícita, pois recebe o nome de "error" e não de "reject").
 
-## API Axios
+### API Axios
 
-
-Em vez de se uma função, chama-se a API Axios, seguida do método de envio que se deseja usar (GET, POST, HEAD, etc) e passando a  URL da requisição como parâmetro. 
+Em vez de uma função, chama-se a API Axios, seguida do método de envio que se deseja usar (GET, POST, HEAD, etc) e passando a  URL da requisição como parâmetro. 
 ```js
 axios.get("https://api.github.com/users/"+username)
   .then(function(resolve){
@@ -142,7 +152,7 @@ Pode-se verificar a requisição na aba <b>Network</b>, onde o nome da requisiç
 
  <img src="img/chrome.png" width="735" height="621">
 
-### No Mozilla
+### No Mozilla Firefox
 
 Acesse a aba <b>Rede</b>, verifique se a opção <b>All</b> está selecionada e então clique sobre o nome da requisição. A aba <b>Hearders</b> estará marcada por defaul e na aba <b>Response</b> é possível visualizar a resposta do servidor. Navegue pelas abas para visualiar mais detalhes da requisição.
 
