@@ -1,6 +1,6 @@
 # Github avatar  <img src="logo/github.png" width="40" height="40" align="right">
 
-Aplicação web que foca no uso de diferentes formas de requisições assíncronas (AJAX) utilizando uma API do Github de modo que, ao fornecer o nome do usuário, seu avatar seja exibido.
+> Aplicação web que foca no uso de diferentes formas de requisições assíncronas (AJAX) utilizando uma API do Github de modo que, ao fornecer o nome do usuário, seu avatar seja exibido.
 
 ## Proposta
 
